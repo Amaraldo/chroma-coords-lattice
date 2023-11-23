@@ -125,7 +125,7 @@ primary_chromaticities = {
 }
 
 # save CSV file to your chosen path
-savecsv = "xycoords.csv"
+savecsv = "path/to/xycoords.csv"
 
 # create spectral locus
 wavelengths = np.linspace(380, 750, 500)
