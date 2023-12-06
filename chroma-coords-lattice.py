@@ -9,7 +9,6 @@ def rbf(dist, r=0.18):
     return np.exp(-(dist**2) / (2*r**2))
 
 def linear_to_sRGB(linear):
-    """Convert a linear RGB colour to an sRGB colour."""
     a = 0.055
     return np.where(linear <= 0.0031308, linear * 12.92, (1 + a) * np.power(linear, 1 / 2.4) - a)
 
