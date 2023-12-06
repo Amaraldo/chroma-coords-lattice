@@ -5,7 +5,6 @@ import numpy as np
 import colour
 
 def rbf(dist, r=0.18):
-    """Radial basis function for smoother blending."""
     return np.exp(-(dist**2) / (2*r**2))
 
 def linear_to_sRGB(linear):
