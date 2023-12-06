@@ -12,7 +12,6 @@ def linear_to_sRGB(linear):
     return np.where(linear <= 0.0031308, linear * 12.92, (1 + a) * np.power(linear, 1 / 2.4) - a)
 
 def generate_chromaticity_diagram_colours(samples=500, alpha=0.9):
-    """Generate colours for the chromaticity diagram."""
     ii, jj = np.meshgrid(
         np.linspace(x_min, x_max, samples), np.linspace(y_min, y_max, samples)
     )
